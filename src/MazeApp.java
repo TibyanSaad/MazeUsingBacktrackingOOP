@@ -9,7 +9,7 @@ public class MazeApp {
         } else if (args.length == 1) {
             if (Objects.equals(args[0], "maze.txt")) {
                 String pathBeg = "src/main/java/org/example/fromtibyan/sprint5/escapemazeoop/";
-                filePath = pathBeg + args[0];
+                MazeLoader.filePath = pathBeg + args[0];
                 MazeLoader.readMaze();
             } else {
                 System.err.println("Invalid filename. Usage: java -cp target/classes org.example.fromtibyan.sprint5.escapemazeoop.MazeApp [maze.txt]");

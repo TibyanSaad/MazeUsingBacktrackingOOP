@@ -10,7 +10,7 @@ public class MazeLoader {
     static int startColumn;
     static char[][] mazeArray2D;
     static ArrayList<String> mazeArray;
-    static String filePath = "src/main/java/org/example/fromtibyan/sprint5/escapemazeoop/maze.txt";
+    static String filePath = "maze.txt";
 
     public static void readMaze() {
         try {

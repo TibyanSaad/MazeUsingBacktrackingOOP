@@ -8,7 +8,7 @@ public class MazeSolver {
 
     public static Boolean SymbolMovement(ArrayList<String> mazeArray) {
         boolean[][] visitedCell = new boolean[mazeArray.size()][mazeArray.get(0).length()];
-        Position start = new Position(startRow, startColumn);
+        Position start = new Position(MazeLoader.startRow, MazeLoader.startColumn);
         Stack<Position> mazeStack = new Stack<>();
         mazeStack.push(start);
 

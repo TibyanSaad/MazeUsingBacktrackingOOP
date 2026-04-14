@@ -6,8 +6,8 @@ public class MazeRenderer {
     static ArrayList<String> pathCoordinates = new ArrayList<>();
 
     public static void printMaze() {
-        mazeArray2D[r][c] = '@';
-        for (char[] maze : mazeArray2D) {
+        MazeLoader.mazeArray2D[MazeSolver.r][MazeSolver.c] = '@';
+        for (char[] maze : MazeLoader.mazeArray2D) {
             System.out.println(maze);
         }
         for (int space = 0; space < 4; space++) {
@@ -16,7 +16,7 @@ public class MazeRenderer {
     }
 
     public static void mazeDelay() {
-        mazeArray2D[r][c] = '-';
+        MazeLoader.mazeArray2D[MazeSolver.r][MazeSolver.c] = '-';
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -25,7 +25,7 @@ public class MazeRenderer {
     }
 
     public static void symbolCoordinates() {
-        pathCoordinates.add("(" + r + "," + c + ") ");
+        pathCoordinates.add("(" + MazeSolver.r + "," + MazeSolver.c + ") ");
     }
 
     public static void printPath() {
