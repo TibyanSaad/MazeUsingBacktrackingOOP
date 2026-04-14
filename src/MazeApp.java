@@ -12,10 +12,10 @@ public class MazeApp {
                 MazeLoader.filePath = pathBeg + args[0];
                 MazeLoader.readMaze();
             } else {
-                System.err.println("Invalid filename. Usage: java -cp target/classes org.example.fromtibyan.sprint5.escapemazeoop.MazeApp [maze.txt]");
+                System.err.println("Invalid filename. Usage: java MazeApp [maze.txt]");
             }
         } else {
-            System.out.println("Usage: java -cp target/classes org.example.fromtibyan.sprint5.escapemazeoop.MazeApp [filename]");
+            System.out.println("Usage: java MazeApp [filename]");
         }
     }
 }
