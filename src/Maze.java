@@ -2,7 +2,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
 
-import static org.example.fromtibyan.sprint5.escapemazeoop.MazeLoader.*;
 
 
 public class Maze {
