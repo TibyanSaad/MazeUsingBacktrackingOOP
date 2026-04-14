@@ -8,7 +8,7 @@ public class MazeApp {
             MazeLoader.readMaze();
         } else if (args.length == 1) {
             if (Objects.equals(args[0], "maze.txt")) {
-                String pathBeg = "src/main/java/org/example/fromtibyan/sprint5/escapemazeoop/";
+                String pathBeg = "src/";
                 MazeLoader.filePath = pathBeg + args[0];
                 MazeLoader.readMaze();
             } else {

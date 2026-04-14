@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Maze {
     public static void storeMaze() {
         try {
-            FileWriter writer = new FileWriter("src/main/java/org/example/fromtibyan/sprint5/escapemazeoop/maze.txt");
+            FileWriter writer = new FileWriter("src/maze.txt");
             for (int row = 0; row < MazeLoader.mazeArray.size(); row++) {
                 for (int column = 0; column < MazeLoader.mazeArray.get(0).length(); column++) {
                     writer.write(MazeLoader.mazeArray2D[row][column]);
